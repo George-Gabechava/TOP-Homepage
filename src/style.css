@@ -1,0 +1,13 @@
+@import "normalize.css";
+
+@font-face {
+  font-family: "STIXTwo";
+  src: url("./STIXTwo.woff2") format("woff2");
+  font-weight: 400-700;
+}
+
+@font-face {
+  font-family: "STIXTwoItalic";
+  src: url("./STIXTwoItalic.woff2") format("woff2");
+  font-weight: 400-700;
+}
