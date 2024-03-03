@@ -8,10 +8,28 @@
 
   <body>
     <header>
-      <div id="seperator"></div>
+      <!-- <div id="seperator"></div> -->
       
-      <div id="photo with name">
-        <img src="../images/IMG1.jpg" width="100vw">
+      <div id="photoName">
+        <picture>
+          <source
+            srcset="../images/IMG1webp.webp"
+            media="(min-width: 1000px)"
+          />
+          <source 
+            srcset="../images/IMG1webp.webp"
+            media="(min-width: 600px)"
+          />
+          <img
+            src="../images/IMG1med.jpg"
+            alt="George-Gabechava"
+            sizes="
+              (min-width: 1000px) calc(100vw - 9rem - 200px), 
+              (min-width: 600px) calc(100vw - 6rem),
+              calc(100vw - 2rem)
+            "
+          />
+        </picture>
         <h1>George Gabechava</h1>
       </div>
       <h2>About Me</h2>
