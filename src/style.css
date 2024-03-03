@@ -11,3 +11,44 @@
   src: url("./STIXTwoItalic.woff2") format("woff2");
   font-weight: 400-700;
 }
+
+/* mobile first design */
+body {
+  margin: 2px
+}
+
+footer {
+  background-color: #005236;
+  color: white;
+  
+  a {
+    color: cyan;
+  }
+
+  a:visited {
+    color: #FFC0CB;
+  }
+}
+
+#seperator {
+  width: 0;
+  height: 0;
+  border-right: 150vw solid transparent;
+  border-top: 50vw solid #006241;
+}
+
+/* Tablet */
+@media (min-width: 500px) {
+  body {
+    margin: 5px
+  }
+  
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+  body {
+    margin: 10px;
+  }
+  
+}
