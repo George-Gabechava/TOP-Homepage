@@ -15,56 +15,47 @@
 /* mobile first design */
 body {
   overflow-x: hidden;
-
-  position: relative;
-  z-index: 0;
 }
 
-/* removing header lets photo z index work */
 header {
   display: flex;
-  overflow-x: hidden;
 
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-
-  position: relative;
-  z-index: 3;
 }
 
 #photoName {
-  position: relative;
-  z-index: 2;
 }
 
 #photo1 {
   width: 80vw;
   position: relative;
-  z-index: 3; /* Ensure this is higher than the separator */
-  margin-top: -150px; /* Adjust the margin instead of top */
+  z-index: 3; 
+  margin-top: -150px; 
 }
 
 #photoLabel {
-  color: red;
   position: relative;
   z-index: 4;
-  /* Adjust the positioning based on your design */
-  top: -50px;
-  left: 25px;
+  margin-top: -115px;
+  left: 10px;
+
+  color: white;
+  font-weight: 550;
+  font-size: calc(90vw / 8);
+  /* Top-left and bottom-right borders using negative offsets */
+  text-shadow: -3px 2px 5px black; 
 }
 
 #separator {
-  position: relative;
-  z-index: 1; /* Lower z-index to be behind other elements */
   width: 0;
   height: 0;
   border-right: 200vw solid transparent;
   border-top: 50vw solid #006241;
   overflow-x: hidden;
 }
-
 
 footer {
   background-color: #005236;
