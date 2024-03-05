@@ -26,36 +26,44 @@ header {
   flex-wrap: wrap;
 }
 
-#photoName {
+#photoContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #006241;
+  width: 100vw;
 }
 
 #photo1 {
   width: 80vw;
   position: relative;
+  margin-top: 40px;
   z-index: 3; 
-  margin-top: -150px; 
 }
 
 #photoLabel {
   position: relative;
   z-index: 4;
-  margin-top: -115px;
+  margin-top: -110px;
   left: 10px;
 
   color: white;
   font-weight: 550;
   font-size: calc(90vw / 8);
-  /* Top-left and bottom-right borders using negative offsets */
   text-shadow: -3px 2px 5px black; 
 }
 
 #separator {
   width: 0;
   height: 0;
-  border-right: 200vw solid transparent;
-  border-top: 50vw solid #006241;
+  border-left: 100vw solid transparent;
+  border-bottom: 40vw solid white;
   overflow-x: hidden;
-}
+
+  position: relative;
+  top: -39.5vw;
+
+  margin-bottom: -40vw;
+  }
 
 #aboutMeContainer {
   display: flex;
@@ -72,6 +80,25 @@ header {
   text-align: center;
 }
 
+#photo2 {
+  width: 100vw;
+  margin-left: -10px;
+  margin-bottom: -15px;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+footer h3 {
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 8px;
+  font-weight: lighter;
+}
+
 .linkedInButton, .gitButton, .openButton {
   padding-bottom: 2px;
   padding-top: 4px;
@@ -79,8 +106,16 @@ header {
   padding-right: 5px;
   background-color: transparent;
   border: none;
+}
 
+.linkedInButton:hover, .gitButton:hover, .openButton:hover {
   cursor: pointer;
+  scale: 1.5;
+  opacity: .5;
+}
+
+#gitButtonMain2 {
+  background-color: lightgray;
 }
 
 #projectContainer {
@@ -92,20 +127,22 @@ header {
   margin: 10px;
   margin-left: 20px;
   margin-right: 20px;
-
   grid-template-rows: 3.5fr 50px 1.5fr;
   align-items: center;
 
   box-shadow: -7px 6px 4px lightgray;
-
   border: 1px solid lightgray;
 }
 
 .screenshot {
-  cursor: pointer;
   width:100%;
 }
 
+.screenshot:hover {
+  cursor: pointer;
+  scale: 1.02;
+  opacity: .5;
+}
 
 .projectHeader {
   display: grid;
@@ -125,7 +162,6 @@ header {
   margin-right: 15px;
 }
 
-
 footer {
   background-color: #005236;
   color: white;
@@ -139,18 +175,52 @@ footer {
   }
 }
 
+/* add more on hover effects for clickable things (brigher color, bigger size, a shadow?, etc) */
+
 /* Tablet */
 @media (min-width: 500px) {
   body {
-    margin: 5px;
   }
-  
+
+  #photo1 {
+    width: 40vw;
+    left: -20vw;
+  }
+
+  #photoLabel {
+    font-size: 3em;
+    top: -25vw;
+    left: 10vw;
+  }
+
+  #aboutMeContainer {
+    position: relative;
+    top: -10vw;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 50px 40vw 40vw;
+  }
+
+  #aboutMeHeader {
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+
+  #aboutMeHeader p {
+
+  }
+
+
+
+
 }
 
 /* Desktop */
 @media (min-width: 1000px) {
   body {
-    margin: 10px;
   }
   
+  #photo1 {
+
+  }
 }

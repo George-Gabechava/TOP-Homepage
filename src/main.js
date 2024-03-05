@@ -49,5 +49,24 @@ project2git.addEventListener('click', (event) => {
   window.open('https://github.com/George-Gabechava/TOP-Weather-API', '_blank');
 });
 
+const project3pic = document.getElementsByClassName('link3')[0];
+project3pic.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.open('https://george-gabechava.github.io/TOP-Todo-List/', '_blank');
+});
+
+const project3 = document.getElementsByClassName('link3')[1];
+project3.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.open('https://george-gabechava.github.io/TOP-Todo-List/', '_blank');
+});
+
+const project3git = document.getElementById("git3");
+project3git.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.open('https://github.com/George-Gabechava/TOP-Todo-List', '_blank');
+});
+
+
 
 // module.exports = { };
