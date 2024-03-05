@@ -7,6 +7,7 @@
   </head>
 
   <body>
+    <!-- Can scroll right on mobile due to separator  -->
       <div id="separator"></div>
 
     <header>
@@ -17,21 +18,52 @@
         />
         <h1 id="photoLabel">George <br> Gabechava</h1>
       </div>
-      <h2>About Me</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-      
+      <div id="aboutMeContainer">
+        <h2 id="aboutMeHeader">About Me</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <div id="socialsContainer">
+          <button type="button" class="gitButton" id="gitButtonMain">
+              <img src="images/github-original.svg" alt="George's Github" width="40px">
+          </button>
+
+          <button type="button" class="linkedInButton" id="linkedInButtonMain">
+            <img src="images/linkedin-original.svg" alt="George's Github" width="40px">
+          </button>
+          
+        </div>
+      </div>
     </header>
     
-    
-    
     <main>
-      <h2>My Work</h2>
+      <h2 id="myProjectsHeader">My Work</h2>
       <div id="projectContainer">
+
         <div class="projectCard" id="project1">
-          test  
+          <img class="screenshot link1" src="images/bsPic.png" alt="battleship screenshot & link">
+          <div class="projectHeader">
+            <h3 class="projectName">Battleship</h3>
+            <button type="button" class="gitButton" id="git1">
+                <img src="images/github-original.svg" alt="Battleship Github" width="30px">
+            </button>
+            <button class="openButton link1" type="button">
+              <img src="images/open-in-new.svg" alt="Battleship Project" width="30px">
+            </button>
+          </div>
+          <p class="projectDesc">Short description of the project. Just a couple sentences will do.</p>
         </div>
+
         <div class="projectCard" id="project2">
-          test  
+          <img class="screenshot link2" src="images/weatherPic.png" alt="weather app screenshot & link">
+          <div class="projectHeader">
+            <h3 class="projectName">Weather with GIF App</h3>
+            <button type="button" class="gitButton" id="git2">
+                <img src="images/github-original.svg" alt="Weather App Github" width="30px">
+            </button>
+            <button class="openButton link2" type="button">
+              <img src="images/open-in-new.svg" alt="Weather App Project" width="30px">
+            </button>
+          </div>
+          <p class="projectDesc">Short description of the project. Just a couple sentences will do.</p>
         </div>
       </div>
 
