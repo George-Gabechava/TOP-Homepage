@@ -7,21 +7,25 @@
   </head>
 
   <body>
-    <!-- Can scroll right on mobile due to separator  -->
-      <div id="separator"></div>
 
     <header>
-      <div id="photoName">
-        <img id="photo1"
-          src="images/IMG1webp.webp"          
-          alt="George Gabechava"
-        />
-        <h1 id="photoLabel">George <br> Gabechava</h1>
+      <div id="photoContainer">
+        <div id="photoName">
+          <img id="photo1"
+            src="images/IMG1webp.webp"          
+            alt="George Gabechava"
+          />
+          <h1 id="photoLabel">George <br> Gabechava</h1>
+        </div>
+  
       </div>
+      
+      <div id="separator"></div>
+
       <div id="aboutMeContainer">
         <h2 id="aboutMeHeader">About Me</h2>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-        <div id="socialsContainer">
+        <div class="socialsContainer">
           <button type="button" class="gitButton" id="gitButtonMain">
               <img src="images/github-original.svg" alt="George's Github" width="40px">
           </button>
@@ -33,6 +37,8 @@
         </div>
       </div>
     </header>
+
+
     
     <main>
       <h2 id="myProjectsHeader">My Work</h2>
@@ -65,19 +71,91 @@
           </div>
           <p class="projectDesc">Short description of the project. Just a couple sentences will do.</p>
         </div>
-      </div>
 
+        <div class="projectCard" id="project3">
+          <img class="screenshot link3" src="images/todoPic.png" alt="To Do app screenshot & link">
+          <div class="projectHeader">
+            <h3 class="projectName">To Do List</h3>
+            <button type="button" class="gitButton" id="git3">
+                <img src="images/github-original.svg" alt="To Do List Github" width="30px">
+            </button>
+            <button class="openButton link3" type="button">
+              <img src="images/open-in-new.svg" alt="To Do List" width="30px">
+            </button>
+          </div>
+          <p class="projectDesc">Short description of the project. Just a couple sentences will do.</p>
+        </div>
+       
+        <div class="projectCard" id="project4">
+          <img class="screenshot link4" src="images/coming-soon-2.jpg" alt="coming soon placeholder">
+          <div class="projectHeader">
+            <h3 class="projectName">Project 4</h3>
+            <button type="button" class="gitButton" id="git4">
+                <img src="images/github-original.svg" alt="Coming Soon Placeholder Github" width="30px">
+            </button>
+            <button class="openButton link4" type="button">
+              <img src="images/open-in-new.svg" alt="Coming Soon Project" width="30px">
+            </button>
+          </div>
+          <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor magna.</p>
+        </div>
+
+        <div class="projectCard" id="project5">
+          <img class="screenshot link5" src="images/coming-soon.jpg" alt="coming soon placeholder">
+          <div class="projectHeader">
+            <h3 class="projectName">Project 5</h3>
+            <button type="button" class="gitButton" id="git5">
+                <img src="images/github-original.svg" alt="Coming Soon Placeholder Github" width="30px">
+            </button>
+            <button class="openButton link5" type="button">
+              <img src="images/open-in-new.svg" alt="Coming Soon Project" width="30px">
+            </button>
+          </div>
+          <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor.</p>
+        </div>
+
+        <div class="projectCard" id="project6">
+          <img class="screenshot link6" src="images/coming-soon-2.jpg" alt="coming soon placeholder">
+          <div class="projectHeader">
+            <h3 class="projectName">Project 6</h3>
+            <button type="button" class="gitButton" id="git6">
+                <img src="images/github-original.svg" alt="Coming Soon Placeholder Github" width="30px">
+            </button>
+            <button class="openButton link6" type="button">
+              <img src="images/open-in-new.svg" alt="Coming Soon Project" width="30px">
+            </button>
+          </div>
+          <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor magna.</p>
+        </div>
+      </div>
     </main>
 
   </body>
 
   <footer>
+    <h2> Contact Me</h2>
+    <h3> Thank you for taking the time to check out my page!
+      If you'd like to get in touch, please send me a message on LinkedIn.
+    </h3>
     <p>
-      Author: <a href="https://github.com/George-Gabechava">George Gabechava</a>
+      <br>
+      Residence: Albany, New York
     </p>
-    <p>
-      <a href="https://github.com/George-Gabechava/TOP-Homepage">Source Code</a>
-    </p>
+    <div class="socialsContainer">
+      <button type="button" class="gitButton" id="gitButtonMain2">
+          <img src="images/github-original.svg" alt="George's Github" width="40px">
+      </button>
+
+      <button type="button" class="linkedInButton" id="linkedInButtonMain2">
+        <img src="images/linkedin-original.svg" alt="George's Github" width="40px">
+      </button>
+      
+    </div>
+    <img id="photo2"
+          src="images/IMG2webp.webp"          
+          alt="George Gabechava"
+    />
+
 
     <script src="bundle.js"></script>
   </footer>
