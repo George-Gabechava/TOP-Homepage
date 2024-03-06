@@ -84,7 +84,7 @@ function myFunction(x) {
 }
 
 // Create a MediaQueryList object for Tablet width
-var x = window.matchMedia("(min-width: 500px) and (max-width: 1000px")
+var x = window.matchMedia("(min-width: 500px)")
 
 // Call listener function at run time
 myFunction(x);

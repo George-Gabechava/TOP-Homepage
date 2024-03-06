@@ -33,9 +33,6 @@ header {
   width: 100vw;
 }
 
-#photoName {
-}
-
 #photo1 {
   height: 90vw;
   position: relative;
@@ -49,12 +46,13 @@ header {
   z-index: 4;
   margin-top: -120px;
   left: 35px;
+  max-width: 500px;
 
   color: white;
   font-weight: 550;
   font-size: calc(90vw / 8);
   text-shadow: -3px 2px 5px black; 
-  
+  overflow: hidden;
 }
 
 #triangle {
@@ -75,7 +73,7 @@ header {
   width: 150%;
   height: 150%;
   position: absolute;
-  transform: rotate(60deg) translate(-55%,0);
+  transform: rotate(60deg) translate(-60%,0);
 }
 
 #aboutMeContainer {
@@ -99,17 +97,19 @@ header {
 
 #photo2 {
   width: 100vw;
+  height: 70vh;
+  object-fit: scale-down;
   margin-left: -10px;
-  margin-bottom: -15px;
+  margin-bottom: -100px;
   margin-top: 10px;
 }
 
-footer {
+#footerContainer {
   text-align: center;
   padding: 10px;
 }
 
-footer h3 {
+#footerContainer h3 {
   text-align: left;
   margin-left: 10px;
   margin-right: 8px;
@@ -133,6 +133,7 @@ footer h3 {
 
 #gitButtonMain2 {
   background-color: lightgray;
+  scale: .9;
 }
 
 #projectContainer {
@@ -142,8 +143,8 @@ footer h3 {
 .projectCard {
   display: grid;
   margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   grid-template-rows: 3.5fr 50px 1.5fr;
   align-items: center;
 
@@ -179,7 +180,7 @@ footer h3 {
   margin-right: 15px;
 }
 
-footer {
+#footerContainer {
   background-color: #005236;
   color: white;
   
@@ -192,8 +193,6 @@ footer {
   }
 }
 
-/* add more on hover effects for clickable things (brigher color, bigger size, a shadow?, etc) */
-
 /* Tablet */
 @media (min-width: 500px) {
 
@@ -202,7 +201,7 @@ footer {
   }
 
   #photoContainer {
-    margin-bottom: 150px;
+    margin-bottom: 200px;
   }
 
   #photo1 {
@@ -215,7 +214,7 @@ footer {
   }
 
   #photoLabel {
-    top: 13vh;
+    top: 15vh;
     left: 35vw;
     font-size: 3em;
   }
@@ -243,14 +242,79 @@ footer {
     transform: rotate(70deg) translate(-50%,0);
   }
 
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #projectContainer {
+    display: grid;
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 /* Desktop */
 @media (min-width: 1000px) {
-  body {
+  #photoContainer {
+    margin-bottom: 20px;
   }
-  
-  #photo1 {
 
+  #photoLabel {
+    top: calc(45vw + 20px);
+    left: 15vw;
+    font-size: 3em;
+  }
+
+  #socials1 {
+    transform: translate(25vw, -10vh);
+  }
+
+  #gitButtonMain, #linkedInButtonMain {
+    scale: 1.5;
+    margin: 10px;
+  }
+
+  #gitButtonMain:hover, #linkedInButtonMain:hover {
+    scale: 2.0;
+  }
+
+  #gitButtonMain2:hover {
+    scale: 1.2;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #projectContainer {
+    display: grid;
+    width: 95vw;
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+
+  footer {
+
+  }
+
+  #footerContainer {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 100px 100px 50px 100px;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  #photo2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    height: 25vw;
+    margin: 0;
   }
 }
