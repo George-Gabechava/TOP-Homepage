@@ -1,5 +1,6 @@
 console.log("hi");
 
+// Button Logic
 
 const gitButton = document.getElementById('gitButtonMain');
 gitButton.addEventListener('click', (event) => {
@@ -68,5 +69,29 @@ project3git.addEventListener('click', (event) => {
 });
 
 
+// Photo Label to a single line only on tablet widths
+let myName = document.getElementById("photoLabel");
+let myName2lines = myName.innerHTML;
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    myName.innerText = "George Gabechava";
+  }
+  else {
+    myName.innerHTML = myName2lines;
+
+  }
+}
+
+// Create a MediaQueryList object for Tablet width
+var x = window.matchMedia("(min-width: 500px) and (max-width: 1000px")
+
+// Call listener function at run time
+myFunction(x);
+
+// Attach listener function on state changes
+x.addEventListener("change", function() {
+  myFunction(x);
+});
 
 // module.exports = { };
