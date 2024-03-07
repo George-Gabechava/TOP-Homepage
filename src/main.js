@@ -14,6 +14,18 @@ linkedInButton.addEventListener('click', (event) => {
   window.location.href = 'https://www.linkedin.com/in/george-gabechava-92905b85';
 });
 
+const gitButtonFooter = document.getElementById('gitButtonMain2');
+gitButtonFooter.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.location.href = 'https://github.com/George-Gabechava';
+});
+
+const linkedInButtonFooter = document.getElementById('linkedInButtonMain2');
+linkedInButtonFooter.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.location.href = 'https://www.linkedin.com/in/george-gabechava-92905b85';
+});
+
 const project1pic = document.getElementsByClassName('link1')[0];
 project1pic.addEventListener('click', (event) => {
   event.preventDefault();
@@ -93,5 +105,3 @@ myFunction(x);
 x.addEventListener("change", function() {
   myFunction(x);
 });
-
-// module.exports = { };
