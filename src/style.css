@@ -14,6 +14,7 @@
 
 /* mobile first design */
 body {
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -64,12 +65,12 @@ header {
   top: calc(90vw + 30px);
   overflow: hidden;
 
-  margin-top: calc(-90vw - 30px);
+  margin-top: calc(-90vw - 70px);
 }
 
 #triangle:after {
   content: '';
-  background: green;
+  background: #005236;
   width: 150%;
   height: 150%;
   position: absolute;
@@ -100,8 +101,10 @@ header {
   height: 70vh;
   object-fit: scale-down;
   margin-left: -10px;
-  margin-bottom: -100px;
-  margin-top: 10px;
+}
+
+footer {
+  background-color: #005236;
 }
 
 #footerContainer {
@@ -154,6 +157,8 @@ header {
 
 .screenshot {
   width:100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .screenshot:hover {
@@ -210,7 +215,6 @@ header {
 
     margin-left: 5vw;
     float: left;
-
   }
 
   #photoLabel {
@@ -236,6 +240,7 @@ header {
 
   #triangle {
     top: calc(40vw);
+    margin-top: calc(-90vw - 30px);
   }
 
   #triangle:after {
@@ -259,18 +264,22 @@ header {
 
 /* Desktop */
 @media (min-width: 1000px) {
+  #triangle {
+    margin-top: calc(-90vw - 100px);
+  }
+
   #photoContainer {
     margin-bottom: 20px;
   }
 
   #photoLabel {
-    top: calc(45vw + 20px);
-    left: 15vw;
+    top: calc(45vw + 10px);
+    left: 12vw;
     font-size: 3em;
   }
 
   #socials1 {
-    transform: translate(25vw, -10vh);
+    transform: translate(25vw, -5vh);
   }
 
   #gitButtonMain, #linkedInButtonMain {
@@ -293,13 +302,14 @@ header {
   }
 
   #projectContainer {
-    display: grid;
-    width: 95vw;
     grid-template-columns: 1fr 1fr 1fr ;
   }
 
   footer {
-
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
   }
 
   #footerContainer {
@@ -308,7 +318,6 @@ header {
     grid-template-rows: 100px 100px 50px 100px;
     justify-items: center;
     align-items: center;
-    width: 100vw;
   }
 
   #photo2 {
